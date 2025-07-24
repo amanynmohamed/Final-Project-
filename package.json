@@ -1,0 +1,29 @@
+{
+  "name": "inner-bloom-puzzle-game",
+  "version": "1.0.0",
+  "description": "A therapeutic mental wellness puzzle game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "echo \"Build complete - static assets ready\"",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "therapeutic",
+    "puzzle",
+    "mental-health",
+    "wellness"
+  ],
+  "author": "Inner Bloom Team",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "express": "^5.1.0",
+    "openai": "^5.10.1"
+  }
+}
