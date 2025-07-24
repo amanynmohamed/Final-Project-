@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Bloom - Therapeutic Mental Wellness Puzzles</title>
+    <meta name="description" content="Interactive nature-themed jigsaw puzzles designed for mental health support. Features therapeutic affirmations, crisis resources, and AI-powered personalization.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inner-bloom-pro-anngladys.replit.app/">
+    <meta property="og:title" content="Inner Bloom - Therapeutic Mental Wellness Puzzles">
+    <meta property="og:description" content="Interactive nature-themed jigsaw puzzles designed for mental health support. Features therapeutic affirmations, crisis resources, and AI-powered personalization.">
+    <meta property="og:image" content="https://inner-bloom-pro-anngladys.replit.app/assets/social-preview.svg">
+    <meta property="og:image:alt" content="Inner Bloom - Therapeutic Mental Wellness Puzzles with flower logo">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:site_name" content="Inner Bloom">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- WhatsApp specific -->
+    <meta property="og:image:secure_url" content="https://inner-bloom-pro-anngladys.replit.app/assets/social-preview.svg">
+    <meta property="og:updated_time" content="2025-07-18T12:15:00Z">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://inner-bloom-pro-anngladys.replit.app/">
+    <meta property="twitter:title" content="Inner Bloom - Therapeutic Mental Wellness Puzzles">
+    <meta property="twitter:description" content="Interactive nature-themed jigsaw puzzles designed for mental health support. Features therapeutic affirmations, crisis resources, and AI-powered personalization.">
+    <meta property="twitter:image" content="https://inner-bloom-pro-anngladys.replit.app/assets/social-preview.svg">
+    <meta property="twitter:image:alt" content="Inner Bloom therapeutic puzzle game interface">
+    <meta property="twitter:creator" content="@InnerBloom">
+    <meta property="twitter:site" content="@InnerBloom">
+    
+    <!-- Additional SEO -->
+    <meta name="keywords" content="mental health, therapeutic puzzles, wellness games, anxiety relief, stress relief, mindfulness, nature therapy">
+    <meta name="author" content="Inner Bloom Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://inner-bloom-pro-anngladys.replit.app/">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Inner Bloom Puzzle</h1>
+        <p class="subtitle">Build focus and calm by piecing together beautiful nature scenes</p>
+    </div>
+
+
+
+    <!-- Puzzle Game Area -->
+    <div class="game-area puzzle-game" id="puzzle-game">
+        <div class="instructions" id="instructions">
+            <h3>🧩 How to Play</h3>
+            <p><strong>Goal:</strong> Arrange pieces in the correct alphabetical/sequential order (1-9, A-I, etc.)! Choose your preferred therapeutic challenge!</p>
+            <p><strong>How:</strong> Click any piece to select it (it will highlight), then click another piece to swap their positions.</p>
+            <p><strong>Options:</strong> Use "Progressive Journey" for guided progression, or select any specific therapeutic theme to focus on that topic!</p>
+            <button id="hide-instructions" class="hide-btn">Got it! ✓</button>
+        </div>
+        
+
+
+        <div class="controls">
+            <button id="quick-boost-button">Quick Boost</button>
+            <button id="reset-puzzle-button">Reset Puzzle</button>
+            <button id="previous-puzzle-button">Previous Puzzle</button>
+            <button id="next-puzzle-button">Next Puzzle</button>
+            <button id="music-toggle-button">🎵 Music</button>
+            <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        </div>
+        
+        <div class="music-selector" id="music-selector" style="display: none;">
+            <label for="music-type-select">Choose Music:</label>
+            <select id="music-type-select" class="music-dropdown">
+                <option value="rain">Gentle Rain</option>
+                <option value="ocean">Ocean Waves</option>
+                <option value="forest">Forest Ambience</option>
+                <option value="calm">Calm Tones</option>
+                <option value="meditation">Meditation Bells</option>
+            </select>
+        </div>
+
+        <div id="puzzle-container" class="puzzle-3x3">
+            <!-- Puzzle pieces will be dynamically generated -->
+        </div>
+
+        <div id="message" class="hidden"></div>
+        
+        <div class="puzzle-topic-selector">
+            <label for="puzzle-topic-select">Choose Puzzle Topic:</label>
+            <select id="puzzle-topic-select" class="topic-dropdown">
+                <option value="progressive">Progressive Journey (Auto-Advance)</option>
+                <option value="numbers">Numbers (1-9)</option>
+                <option value="letters">Letters (A-I)</option>
+                <option value="imageNature">Nature Image Puzzle</option>
+                <option value="positiveWords">Positive Words</option>
+                <option value="natureWords">Nature Words</option>
+                <option value="emotionWords">Emotion Words</option>
+                <option value="actionWords">Action Words</option>
+                <option value="mindfulWords">Mindful Words</option>
+                <option value="strengthWords">Strength Words</option>
+                <option value="comfortWords">Comfort Words</option>
+                <option value="gratefulWords">Grateful Words</option>
+                <option value="healingWords">Healing Words</option>
+                <option value="hopeWords">Hope Words</option>
+            </select>
+        </div>
+        
+        <div class="affirmation-theme-selector">
+            <label for="theme-select">Affirmation Focus:</label>
+            <select id="theme-select" class="theme-dropdown">
+                <option value="mixed">Mixed Themes</option>
+                <option value="calm">Calm & Peace</option>
+                <option value="confidence">Confidence</option>
+                <option value="hope">Hope & Optimism</option>
+                <option value="selfCompassion">Self-Compassion</option>
+                <option value="resilience">Resilience</option>
+                <option value="gratitude">Gratitude</option>
+            </select>
+        </div>
+
+        <div class="resources-link">
+            <a href="resources.html" target="_blank" rel="noopener noreferrer">Resources & Help</a>
+            <a href="therapeutic-features.html" target="_blank" rel="noopener noreferrer">For Mental Health Professionals</a>
+            <a href="testing-dashboard.html" target="_blank" rel="noopener noreferrer">Testing Dashboard</a>
+        </div>
+
+        <div class="privacy-statement">
+            <p><strong>Privacy:</strong> Your privacy is important to us. This app stores only your preferences (dark mode, music settings) locally on your device. Anonymous usage analytics help improve therapeutic effectiveness. No personal data is collected or shared.</p>
+            <p><strong>Clinical Note:</strong> This therapeutic tool integrates crisis support resources and tracks anonymous usage patterns for mental health professionals.</p>
+        </div>
+        
+
+    </div>
+
+
+
+    <audio id="audio" preload="auto"></audio>
+    <script src="sentiment-analysis.js"></script>
+    <script src="test-suite.js"></script>
+    <script src="qa-automation.js"></script>
+    <script src="crisis-resources.js"></script>
+    <script src="usage-analytics.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

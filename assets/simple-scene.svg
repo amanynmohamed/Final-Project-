@@ -1,0 +1,27 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background -->
+  <rect width="400" height="200" fill="#87CEEB"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="200" width="400" height="200" fill="#90EE90"/>
+  
+  <!-- Sun -->
+  <circle cx="100" cy="80" r="40" fill="#FFD700"/>
+  
+  <!-- Mountain -->
+  <polygon points="250,200 180,120 320,120" fill="#8B7D6B"/>
+  
+  <!-- Tree -->
+  <rect x="320" y="150" width="15" height="50" fill="#8B4513"/>
+  <circle cx="327" cy="140" r="25" fill="#228B22"/>
+  
+  <!-- House -->
+  <rect x="50" y="160" width="60" height="40" fill="#FF6B6B"/>
+  <polygon points="50,160 80,130 110,160" fill="#8B4513"/>
+  
+  <!-- Window -->
+  <rect x="65" y="170" width="12" height="12" fill="#87CEEB"/>
+  
+  <!-- Door -->
+  <rect x="85" y="180" width="10" height="20" fill="#8B4513"/>
+</svg>

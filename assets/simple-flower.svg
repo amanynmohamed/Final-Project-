@@ -1,0 +1,25 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="300" height="200" fill="#87CEEB"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="200" width="300" height="100" fill="#90EE90"/>
+  
+  <!-- Flower stem -->
+  <rect x="140" y="150" width="20" height="100" fill="#228B22"/>
+  
+  <!-- Flower center -->
+  <circle cx="150" cy="120" r="25" fill="#FFD700"/>
+  
+  <!-- Flower petals -->
+  <ellipse cx="150" cy="85" rx="15" ry="25" fill="#FF69B4"/>
+  <ellipse cx="185" cy="120" rx="25" ry="15" fill="#FF69B4"/>
+  <ellipse cx="150" cy="155" rx="15" ry="25" fill="#FF69B4"/>
+  <ellipse cx="115" cy="120" rx="25" ry="15" fill="#FF69B4"/>
+  
+  <!-- Grid lines for puzzle pieces (very light) -->
+  <line x1="100" y1="0" x2="100" y2="300" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+  <line x1="200" y1="0" x2="200" y2="300" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+  <line x1="0" y1="100" x2="300" y2="100" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+  <line x1="0" y1="200" x2="300" y2="200" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+</svg>

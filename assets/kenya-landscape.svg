@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Sky gradient -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#87CEEB;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Mountain gradient -->
+    <linearGradient id="mountKenya" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7D6B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6B5B73;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A4A4A;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Savanna gradient -->
+    <linearGradient id="savanna" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8FBC8F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#228B22;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Soil gradient -->
+    <linearGradient id="redSoil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#CD853F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Clear blue sky -->
+  <rect width="300" height="90" fill="url(#skyGradient)"/>
+  
+  <!-- Bright African sun -->
+  <circle cx="240" cy="35" r="20" fill="#FFD700"/>
+  <circle cx="240" cy="35" r="25" fill="#FFA500" opacity="0.4"/>
+  
+  <!-- Fluffy white cloud -->
+  <g transform="translate(60,25)">
+    <ellipse cx="0" cy="0" rx="18" ry="8" fill="white"/>
+    <ellipse cx="12" cy="-3" rx="15" ry="6" fill="white"/>
+    <ellipse cx="-8" cy="2" rx="12" ry="5" fill="white"/>
+  </g>
+  
+  <!-- Mount Kenya with snow cap -->
+  <polygon points="150,90 180,40 210,90" fill="url(#mountKenya)"/>
+  <polygon points="165,55 180,40 195,55" fill="#F0F8FF"/>
+  
+  <!-- Green savanna grassland -->
+  <rect x="0" y="90" width="300" height="110" fill="url(#savanna)"/>
+  
+  <!-- Iconic umbrella acacia trees with distinct shapes -->
+  <!-- Large acacia left -->
+  <rect x="45" y="140" width="8" height="45" fill="#8B4513"/>
+  <ellipse cx="49" cy="125" rx="28" ry="18" fill="#2E8B57"/>
+  <ellipse cx="49" cy="120" rx="22" ry="14" fill="#32CD32" opacity="0.8"/>
+  
+  <!-- Medium acacia center -->
+  <rect x="145" y="135" width="6" height="50" fill="#8B4513"/>
+  <ellipse cx="148" cy="120" rx="25" ry="16" fill="#2E8B57"/>
+  <ellipse cx="148" cy="115" rx="20" ry="12" fill="#32CD32" opacity="0.8"/>
+  
+  <!-- Smaller acacia right -->
+  <rect x="225" y="150" width="5" height="35" fill="#8B4513"/>
+  <ellipse cx="227.5" cy="135" rx="18" ry="12" fill="#2E8B57"/>
+  <ellipse cx="227.5" cy="132" rx="15" ry="9" fill="#32CD32" opacity="0.8"/>
+  
+  <!-- Realistic African elephant -->
+  <g transform="translate(85,155)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="22" ry="12" fill="#696969"/>
+    <!-- Head -->
+    <ellipse cx="-18" cy="-3" rx="12" ry="10" fill="#696969"/>
+    <!-- Trunk -->
+    <path d="M -28 -3 Q -35 5 -30 12" stroke="#696969" stroke-width="4" fill="none"/>
+    <!-- Ears -->
+    <ellipse cx="-22" cy="-8" rx="8" ry="12" fill="#696969"/>
+    <ellipse cx="-14" cy="-8" rx="6" ry="10" fill="#696969"/>
+    <!-- Legs -->
+    <rect x="-15" y="8" width="4" height="12" fill="#696969"/>
+    <rect x="-8" y="8" width="4" height="12" fill="#696969"/>
+    <rect x="5" y="8" width="4" height="12" fill="#696969"/>
+    <rect x="12" y="8" width="4" height="12" fill="#696969"/>
+  </g>
+  
+  <!-- Realistic giraffe -->
+  <g transform="translate(190,110)">
+    <!-- Long neck -->
+    <rect x="0" y="0" width="6" height="45" fill="#DAA520"/>
+    <!-- Body -->
+    <ellipse cx="3" cy="45" rx="12" ry="8" fill="#DAA520"/>
+    <!-- Head -->
+    <ellipse cx="3" cy="-5" rx="5" ry="7" fill="#DAA520"/>
+    <!-- Horns -->
+    <rect x="1" y="-10" width="1" height="4" fill="#8B4513"/>
+    <rect x="5" y="-10" width="1" height="4" fill="#8B4513"/>
+    <!-- Legs -->
+    <rect x="-3" y="50" width="3" height="15" fill="#DAA520"/>
+    <rect x="6" y="50" width="3" height="15" fill="#DAA520"/>
+    <!-- Spots -->
+    <circle cx="1" cy="20" r="2" fill="#8B4513"/>
+    <circle cx="5" cy="30" r="2" fill="#8B4513"/>
+    <circle cx="8" cy="48" r="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- Red African soil -->
+  <rect x="0" y="200" width="300" height="100" fill="url(#redSoil)"/>
+  
+  <!-- Distinctive rocks -->
+  <ellipse cx="60" cy="240" rx="15" ry="8" fill="#8B7355"/>
+  <ellipse cx="150" cy="250" rx="12" ry="6" fill="#A0522D"/>
+  <ellipse cx="230" cy="235" rx="18" ry="10" fill="#8B7355"/>
+  
+  <!-- Scattered acacia seedlings -->
+  <g transform="translate(120,220)">
+    <rect x="0" y="8" width="2" height="8" fill="#8B4513"/>
+    <circle cx="1" cy="5" r="4" fill="#228B22"/>
+  </g>
+  
+  <g transform="translate(180,230)">
+    <rect x="0" y="6" width="2" height="6" fill="#8B4513"/>
+    <circle cx="1" cy="4" r="3" fill="#228B22"/>
+  </g>
+  
+  <!-- Traditional Maasai hut in distance -->
+  <g transform="translate(270,170)">
+    <ellipse cx="0" cy="5" rx="8" ry="5" fill="#8B4513"/>
+    <path d="M -8 5 L 0 -3 L 8 5" fill="#D2691E"/>
+  </g>
+</svg>
