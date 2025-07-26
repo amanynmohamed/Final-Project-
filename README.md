@@ -8,7 +8,7 @@ Inner Bloom is an AI-enhanced therapeutic puzzle game that promotes mental welln
 
 ---
 
-## 🎯 SDG Focus
+## 🎯 SDG Focus 
 
 - *SDG 3: Good Health and Well-being*
 - *SDG 4: Quality Education*
